@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="logincontainer">
+       <div class="Welcoming">
+        <p>This is welcoming page for new user design will be done soon
+            like, by including some advertizing short video here
+            <img src="gada.jpg" alt="Welcome">
+        </p>
+       </div> 
+     <div class="signuppage">
+            <h3>welcome to Gada</h3>
+            <form action="" method="POST" class="">
+                <input type="text" name="fname" placeholder="First name:" value="" /><span class="error">
+                    <?php echo $errorfn; ?>
+                </span> <br>
+                <input type="text" name="lname" placeholder="last name: " /><span class="error">
+                    <?php echo $errorLn; ?>
+                </span> <br>
+                <input type="email" name="email" placeholder="Email" /> <span class="error">
+                    <?php echo $errorEm; ?>
+                </span><br>
+                <input type="password" name="password" id="password" placeholder="password" /> <span class="error">
+                    <?php echo $errorPas . $notcomfpassword; ?>
+                </span> <br>
+                <input type="password" name="Cpassword" placeholder=" conform password " /> <span class="error">
+                    <?php echo $notcomfpassword; ?>
+                </span> <br>
+                <input type="text" name="location" id="location" placeholder="location" /> <br>
+                <input type="text" name="phone" id="phone" placeholder="phone number" /> <br>
+                <input type="text" name="business_type" id="business_type" placeholder="business type" /> <br>
+                <input type="text" name="username" id="username" placeholder="create Username:" /> <span class="error">
+                    <?php echo $errorusern; ?>
+                </span> <br>
+                <input class="gada-button-primary" type="submit" value="Signup"><br><br>
+            </form>
+            <p>People who use our service may have uploaded your contact information to 5Gada. Learn more
+
+                By signing up, you agree to our Terms, Privacy Policy and Cookies Policy.</p>
+            <p class="option">Have an account? <a href="login.html">Log in</a><br><br> </p>
+        </div>
+    </div>
+</body>
+
+</html>
